@@ -18,7 +18,9 @@ body {
 .main {
   width: 75%;
   margin: 0 auto;
-  p {
+  // Note that using & only creates a seperate block in scss
+  // Use #{&} to wrap up the block under the parent's block
+  #{&}__paragraph {
     font-weight: map-get($font-weights, bold);
   }
 }

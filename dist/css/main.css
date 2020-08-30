@@ -8,7 +8,7 @@ body {
   margin: 0 auto;
 }
 
-.main p {
+.main .main__paragraph {
   font-weight: 700;
 }
 /*# sourceMappingURL=main.css.map */
