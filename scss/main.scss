@@ -1,8 +1,8 @@
 // Concept 5: Partials and imports
-@import './resets';
-@import './variables';
-@import './functions';
-@import './mixins';
+@import "./resets";
+@import "./variables";
+@import "./functions";
+@import "./mixins";
 
 body {
   background: $primary-color;
@@ -12,14 +12,14 @@ body {
 // Concept 3: Nesting and Interpolation
 .main {
   @include flexCenter(row);
-  @include mobile{
+  @include mobile {
     flex-direction: column;
   }
   width: 75%;
   margin: 0 auto;
   // Note that using & only creates a seperate block in scss
   // Use #{&} to wrap up the block under the parent's block- INTERPOLATION
-  #{&}__paragraph {
+  #{&}__paragraph1 {
     font-weight: weight(bold);
 
     &:hover {
@@ -27,8 +27,17 @@ body {
       cursor: default;
     }
   }
+
+  #{&}__paragraph2 {
+    // Concept 10: Extend scss
+    @extend .main__paragraph1;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
 }
 
 .light {
-  @include theme($light-theme:true);
+  @include theme($light-theme: true);
 }
