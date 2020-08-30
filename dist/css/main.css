@@ -11,4 +11,9 @@ body {
 .main .main__paragraph {
   font-weight: 700;
 }
+
+.main .main__paragraph:hover {
+  color: pink;
+  cursor: default;
+}
 /*# sourceMappingURL=main.css.map */

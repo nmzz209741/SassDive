@@ -19,8 +19,13 @@ body {
   width: 75%;
   margin: 0 auto;
   // Note that using & only creates a seperate block in scss
-  // Use #{&} to wrap up the block under the parent's block
+  // Use #{&} to wrap up the block under the parent's block- INTERPOLATION
   #{&}__paragraph {
     font-weight: map-get($font-weights, bold);
+
+    &:hover {
+      color: pink;
+      cursor: default;
+    }
   }
 }
