@@ -20,8 +20,12 @@ body {
     font-weight: weight(bold);
 
     &:hover {
-      color: pink;
+      color: $hover-color;
       cursor: default;
     }
   }
+}
+
+.light {
+  @include theme($light-theme:false);
 }
