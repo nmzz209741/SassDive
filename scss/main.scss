@@ -1,20 +1,13 @@
-// Concept 1: Variables
-$primary-color: #272727;
-$accent-color: #ff652f;
-$text-color: #fff;
-// Concept 2: Maps
-$font-weights: (
-  "regular": 400,
-  "medium": 500,
-  "bold": 700,
-);
+// Concept 5: Partials and imports
+@import './resets';
+@import './variables';
 
 body {
   background: $primary-color;
   color: $text-color;
 }
 
-// Concept 3: Nesting
+// Concept 3: Nesting and Interpolation
 .main {
   width: 75%;
   margin: 0 auto;
