@@ -1,14 +1,16 @@
 // Concept 1: Variables
+$primary-color: #272727;
+$accent-color: #ff652f;
+$text-color: #fff;
 // Concept 2: Maps
-
-$colors : (
-  "primary-color": #272727,
-  "accent-color": #ff652f,
-  "text-color": #fff,
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
 );
 
 body {
-  background: map-get($colors, primary-color);
+  background: $primary-color;
+  color: $text-color;
+  font-weight: map-get($font-weights, bold);
 }
-
-
