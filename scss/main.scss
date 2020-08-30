@@ -2,6 +2,11 @@
 @import './resets';
 @import './variables';
 
+// Concept 6: Functions
+@function weight($name) {
+  @return map-get($font-weights, $name);
+}
+
 body {
   background: $primary-color;
   color: $text-color;
@@ -14,7 +19,7 @@ body {
   // Note that using & only creates a seperate block in scss
   // Use #{&} to wrap up the block under the parent's block- INTERPOLATION
   #{&}__paragraph {
-    font-weight: map-get($font-weights, bold);
+    font-weight: weight(bold);
 
     &:hover {
       color: pink;
