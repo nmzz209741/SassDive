@@ -15,7 +15,7 @@ body {
   @include mobile {
     flex-direction: column;
   }
-  // Concept 11: Operations
+  // Concept 10: Operations
   // normal CSS
   // width: calc(100%-80%);
   // width: calc(100%-400px);
@@ -33,7 +33,7 @@ body {
   }
 
   #{&}__paragraph2 {
-    // Concept 10: Extend scss
+    // Concept 9: Extend scss
     @extend .main__paragraph1;
 
     &:hover {
