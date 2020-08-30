@@ -12,5 +12,13 @@ $font-weights: (
 body {
   background: $primary-color;
   color: $text-color;
-  font-weight: map-get($font-weights, bold);
+}
+
+// Concept 3: Nesting
+.main {
+  width: 75%;
+  margin: 0 auto;
+  p {
+    font-weight: map-get($font-weights, bold);
+  }
 }
