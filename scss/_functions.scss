@@ -1,0 +1,4 @@
+// Concept 6: Functions
+@function weight($name) {
+  @return map-get($font-weights, $name);
+}

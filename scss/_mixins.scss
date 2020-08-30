@@ -1,0 +1,7 @@
+// Concept 7: Mixins (with and w/o arguments)
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
